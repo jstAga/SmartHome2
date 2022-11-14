@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SmartHome2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="don_t_have">Don`t have an account yet?</string>
+    <string name="crete">Create an account</string>
+    <string name="smart">SMART</string>
+    <string name="home">HOME</string>
+    <string name="welcome_string">Admin`s home</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="dining_room">Dining room</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="Living_room">Living room</string>
+    <string name="devices_2">2 devices</string>
+    <string name="devices_3">3 devices</string>
+    <string name="devices_1">1 devices</string>
+    <string name="khw">30 Khw</string>
+    <string name="power">Power use for today</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/circle_person"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintBottom_toBottomOf="@id/circle_person"
+        app:layout_constraintEnd_toEndOf="@id/circle_person"
+        app:layout_constraintStart_toStartOf="@id/circle_person"
+        app:layout_constraintTop_toTopOf="@id/circle_person" />
+
+    <TextView
+        android:id="@+id/welcome_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/welcome_string"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle_electric_bolt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/welcome_string"
+        app:layout_constraintTop_toBottomOf="@id/welcome_string" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_electric_bolt"
+        app:layout_constraintBottom_toBottomOf="@id/circle_electric_bolt"
+        app:layout_constraintEnd_toEndOf="@id/circle_electric_bolt"
+        app:layout_constraintStart_toStartOf="@id/circle_electric_bolt"
+        app:layout_constraintTop_toTopOf="@id/circle_electric_bolt" />
+
+    <TextView
+        android:id="@+id/khw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="@string/khw"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/circle_electric_bolt"
+        app:layout_constraintTop_toTopOf="@id/circle_electric_bolt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/power"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/khw"
+        app:layout_constraintTop_toBottomOf="@id/khw" />
+</androidx.constraintlayout.widget.ConstraintLayout>
