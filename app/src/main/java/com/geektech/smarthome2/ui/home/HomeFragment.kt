@@ -11,9 +11,7 @@ import com.geektech.smarthome2.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-
-    private val binding get() = _binding!!
+private lateinit var binding:FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,8 +19,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 

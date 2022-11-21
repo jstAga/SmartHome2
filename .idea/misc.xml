@@ -5,11 +5,14 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_btn_login.xml" value="0.1105" />
         <entry key="app/src/main/res/drawable/ic_circle.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/ic_circle_electric_bolt.xml" value="0.1105" />
         <entry key="app/src/main/res/drawable/ic_electric_bolt.xml" value="0.1105" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.1105" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1638888888888889" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19452090793185764" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.20955912272135419" />
         <entry key="app/src/main/res/layout/fragment_log_in.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/item_home.xml" value="0.29375" />
       </map>
     </option>
   </component>
