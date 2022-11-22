@@ -79,6 +79,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_khw" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_home_room"
         app:spanCount="2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
