@@ -18,20 +18,10 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.geektech.smarthome2.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_settings"
+        android:name="com.geektech.smarthome2.ui.settings.SettingsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
-
-<!--    <fragment-->
-<!--        android:id="@+id/logInFragment"-->
-<!--        android:name="com.geektech.smarthome2.ui.log_in.LogInFragment"-->
-<!--        android:label="fragment_log_in"-->
-<!--        tools:layout="@layout/fragment_log_in" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_logInFragment_to_navigation_home"-->
-<!--            app:destination="@id/navigation_home" />-->
-<!--    </fragment>-->
+        tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@+id/logInFragment"
@@ -42,4 +32,10 @@
             android:id="@+id/action_logInFragment_to_mainFragment"
             app:destination="@id/navigation_home" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_on_boarding"
+        android:name="com.geektech.smarthome2.ui.onBoarding.OnBoardingFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.geektech.smarthome2.data.model.Room
 import com.geektech.smarthome2.databinding.ItemHomeBinding
+import com.geektech.smarthome2.load
 
 class RoomAdapter(private val roomList:ArrayList<Room>): RecyclerView.Adapter<RoomAdapter.RoomViewHolder>() {
 
@@ -24,7 +25,7 @@ class RoomAdapter(private val roomList:ArrayList<Room>): RecyclerView.Adapter<Ro
         fun bind(room: Room){
             binding.tvRoom.text = room.room
             binding.tvDevices.text = room.countDevices + " devices"
-            Glide.with(binding.ivHomePic).load(room.picture).into(binding.ivHomePic)
+            binding.ivHomePic.load(room.picture.toString())
         }
     }
 }

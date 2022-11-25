@@ -10,6 +10,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.geektech.smarthome2.data.pref.Pref
 import com.geektech.smarthome2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,18 +20,23 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val pref = Pref(applicationContext)
         supportActionBar?.hide();
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
-
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
+
+        if (!pref.checkShow()) {
+        navController.navigate(R.id.navigation_on_boarding)
+        }
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.logInFragment
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_settings,
+                R.id.logInFragment
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
